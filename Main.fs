@@ -4,10 +4,8 @@ open System
 open System.Text.Json
 
 module Program =
-    let solutions = Map [
-        "01", (AOC01.solveA, AOC01.solveB)
-        "02", (AOC02.solveA, AOC02.solveB)
-    ]
+    let solutions =
+        Map [ "01", (AOC01.solveA, AOC01.solveB); "02", (AOC02.solveA, AOC02.solveB) ]
 
     [<EntryPoint>]
     let main args =
@@ -20,4 +18,4 @@ module Program =
         printfn "Running inputs-%s" args[0]
         let inputLines = System.IO.File.ReadAllLines($"inputs/input-{args[0]}.txt")
         printfn "Result: %s" (solve inputLines)
-        0 // return an integer exit code
+        0
