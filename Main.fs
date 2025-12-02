@@ -6,6 +6,7 @@ open System.Text.Json
 module Program =
     let solutions = Map [
         "01", (AOC01.solveA, AOC01.solveB)
+        "02", (AOC02.solveA, AOC02.solveB)
     ]
 
     [<EntryPoint>]
