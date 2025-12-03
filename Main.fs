@@ -5,7 +5,10 @@ open System.Text.Json
 
 module Program =
     let solutions =
-        Map [ "01", (AOC01.solveA, AOC01.solveB); "02", (AOC02.solveA, AOC02.solveB) ]
+        Map
+            [ "01", (AOC01.solveA, AOC01.solveB)
+              "02", (AOC02.solveA, AOC02.solveB)
+              "03", (AOC03.solveA, AOC03.solveB) ]
 
     [<EntryPoint>]
     let main args =

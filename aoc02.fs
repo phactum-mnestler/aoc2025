@@ -1,7 +1,5 @@
 namespace AOC2025
 
-open System.Text.RegularExpressions
-
 module AOC02 =
 
     let parseRange (rangeStr: string) =
@@ -27,8 +25,6 @@ module AOC02 =
         |> Array.filter isInvalidA
         |> Array.sum
         |> string
-
-    let matches (str: string) (s: string) = Regex.IsMatch(str, $"^(?:{s})+$")
 
     let isRepeated (str: string) n =
         if str.Length % n <> 0 then
