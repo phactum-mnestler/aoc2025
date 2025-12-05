@@ -10,6 +10,7 @@
     <Compile Include="aoc02.fs" />
     <Compile Include="aoc03.fs" />
     <Compile Include="aoc04.fs" />
+    <Compile Include="aoc05.fs" />
     <Compile Include="Main.fs" />
   </ItemGroup>
 
