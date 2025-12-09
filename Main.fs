@@ -1,7 +1,6 @@
 ﻿namespace AOC2025
 
 open System
-open System.Text.Json
 
 module Program =
     let solutions =
@@ -11,7 +10,8 @@ module Program =
               "03", (AOC03.solveA, AOC03.solveB)
               "04", (AOC04.solveA, AOC04.solveB)
               "05", (AOC05.solveA, AOC05.solveB)
-              "06", (AOC06.solveA, AOC06.solveB) ]
+              "06", (AOC06.solveA, AOC06.solveB)
+              "07", (AOC07.solveA, AOC07.solveB) ]
 
     [<EntryPoint>]
     let main args =
