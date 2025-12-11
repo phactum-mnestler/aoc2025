@@ -11,7 +11,8 @@ module Program =
               "04", (AOC04.solveA, AOC04.solveB)
               "05", (AOC05.solveA, AOC05.solveB)
               "06", (AOC06.solveA, AOC06.solveB)
-              "07", (AOC07.solveA, AOC07.solveB) ]
+              "07", (AOC07.solveA, AOC07.solveB)
+              "08", (AOC08.solveA, AOC08.solveB) ]
 
     [<EntryPoint>]
     let main args =
