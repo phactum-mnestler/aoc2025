@@ -3,9 +3,6 @@ namespace AOC2025
 module AOC08 =
     type Coordinate = (int64 * int64 * int64)
 
-    // 0 19 7 14
-    // 2 13 8 18 17
-
     let parseLine (line: string) =
         let segments = line.Split(",") |> Array.map int64
         Coordinate(segments[0], segments[1], segments[2])
