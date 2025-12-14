@@ -15,7 +15,8 @@ module Program =
               "08", (AOC08.solveA, AOC08.solveB)
               "09", (AOC09.solveA, AOC09.solveB)
               "10", (AOC10.solveA, AOC10.solveB)
-              "11", (AOC11.solveA, AOC11.solveB) ]
+              "11", (AOC11.solveA, AOC11.solveB)
+              "12", (AOC12.solveA, AOC12.solveB) ]
 
     [<EntryPoint>]
     let main args =
@@ -25,13 +26,13 @@ module Program =
 
         let exampleLines =
             if args[0] = "11" then
-                System.IO.File.ReadAllLines($"inputs/example-{args[0]}{args[1]}.txt")
+                System.IO.File.ReadAllLines $"inputs/example-{args[0]}{args[1]}.txt"
             else
-                System.IO.File.ReadAllLines($"inputs/example-{args[0]}.txt")
+                System.IO.File.ReadAllLines $"inputs/example-{args[0]}.txt"
 
         printfn "Result: %s" (solve exampleLines)
         Console.ReadKey(true) |> ignore
         printfn "Running inputs-%s" args[0]
-        let inputLines = System.IO.File.ReadAllLines($"inputs/input-{args[0]}.txt")
+        let inputLines = System.IO.File.ReadAllLines $"inputs/input-{args[0]}.txt"
         printfn "Result: %s" (solve inputLines)
         0
